@@ -20,9 +20,9 @@ from rest_framework.permissions import (IsAdminUser, IsAuthenticated,
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
-from users.models import CustomUser
 from reviews.filters import TitleFilterSet
 from reviews.models import Category, Genre, Review, Title
+from users.models import CustomUser
 
 
 class CategoryViewSet(MixViewSet):
