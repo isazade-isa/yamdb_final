@@ -29,7 +29,7 @@ jobs:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     needs: tests
-    if: contains('refs/heads/master', github.ref)
+    # if: contains('refs/heads/master', github.ref)
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
@@ -44,13 +44,13 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: zombi2004/api_yamdb:latest
+          tags: zombi2004/yamdb_final:latest
           file: api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
-    if: github.ref == 'refs/heads/master'
+    # if: github.ref == 'refs/heads/master'
     steps:
       - name: executing remote ssh command to deploy
         uses: appleboy/ssh-action@master
