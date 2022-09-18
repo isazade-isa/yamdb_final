@@ -1,6 +1,6 @@
 from api.mixins import MixViewSet
-from api.permissions import (
-    IsAdmin, IsAuthorAdminOrModeratorPermission, IsAuthorOrStaffOrReadOnly)
+from api.permissions import (IsAdmin, IsAuthorAdminOrModeratorPermission,
+                             IsAuthorOrStaffOrReadOnly)
 from api.serializers import (CategorySerializer, CommentSerializer,
                              GenreSerializer, ReviewSerializer,
                              SingUpSerializer, TitleReadSerializer,
@@ -15,8 +15,8 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.pagination import LimitOffsetPagination
-from rest_framework.permissions import (
-    IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly)
+from rest_framework.permissions import (IsAdminUser, IsAuthenticated,
+                                        IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
