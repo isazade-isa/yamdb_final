@@ -1,12 +1,11 @@
 from api.mixins import MixViewSet
 from api.permissions import (
-    IsAdmin, IsAuthorAdminOrModeratorPermission, IsAuthorOrStaffOrReadOnly
-)
-from api.serializers import (
-    CategorySerializer, CommentSerializer, GenreSerializer, ReviewSerializer,
-    SingUpSerializer, TitleReadSerializer, TitleWriteSerializer,
-    TokenSerializer, UserSerializer
-)
+    IsAdmin, IsAuthorAdminOrModeratorPermission, IsAuthorOrStaffOrReadOnly)
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             GenreSerializer, ReviewSerializer,
+                             SingUpSerializer, TitleReadSerializer,
+                             TitleWriteSerializer, TokenSerializer,
+                             UserSerializer)
 from django.conf import settings
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import BadHeaderError, send_mail
@@ -17,8 +16,7 @@ from rest_framework import filters, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import (
-    IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly
-)
+    IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
