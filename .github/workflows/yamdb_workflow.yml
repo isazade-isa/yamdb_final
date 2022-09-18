@@ -44,7 +44,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: zombi2004/yamdb_final:latest
+          tags: zombi2004/api_yamdb:latest
           file: api_yamdb/Dockerfile
 
   deploy:
