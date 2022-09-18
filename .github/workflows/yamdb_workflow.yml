@@ -50,6 +50,7 @@ jobs:
         with:
           push: true
           tags: zombi2004/infra_actions:latest
+          file: api_yamdb/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
