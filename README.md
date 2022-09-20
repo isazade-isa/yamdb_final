@@ -15,14 +15,14 @@
 
 ### Технологии:
 
-Python 3.7, Django 2.2.16, Django REST framework 3.12.4, JWT, Docker.
+Python 3.7, Django 2.2.16, Django REST framework 3.12.4, JWT, Docker, CI/CD 
 
 ### Как запустить проект:
 
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git@github.com:isazade-isa/infra_sp2.git
+git@github.com:isazade-isa/yamdb_final.git
 ```
 
 ### Cоздать и активировать виртуальное окружение:
