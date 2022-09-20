@@ -12,7 +12,8 @@ SECRET_KEY = (
     'my-secret-key-is-the-best-of-the-best-la-la-la-la!'
 )
 
-DEBUG = os.getenv('DEBUG_ENV')
+DEBUG = True
+# DEBUG = os.getenv('DEBUG_ENV')
 
 ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS')]
 
