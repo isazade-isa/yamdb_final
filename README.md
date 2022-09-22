@@ -71,12 +71,6 @@ docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input
 ```
 
-### Создаем дамп базы данных:
-
-```
-docker-compose exec web python manage.py dumpdata > dumpPostrgeSQL.json
-```
-
 ### Шаблон наполнения .env (не включен в текущий репозиторий) расположенный по пути infra/.env
 
 ```
